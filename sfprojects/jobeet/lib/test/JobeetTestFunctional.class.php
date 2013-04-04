@@ -20,6 +20,7 @@ class JobeetTestFunctional extends sfTestFunctional
  
     $criteria = new Criteria();
     $criteria->add(JobeetJobPeer::EXPIRES_AT, time(), Criteria::GREATER_THAN);
+    $criteria->add(JobeetJobPeer::CATEGORY_ID, $category->getId());
     $criteria->addDescendingOrderByColumn(JobeetJobPeer::CREATED_AT);
  
     return JobeetJobPeer::doSelectOne($criteria);
