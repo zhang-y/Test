@@ -26,8 +26,9 @@ class JobeetCategory extends BaseJobeetCategory {
 	{
 		$criteria = $this->getActiveJobsCriteria();
 		$criteria->setLimit($max);
-		
+
 		return JobeetJobPeer::doSelect($criteria);
+
 	}
 	
 	public function countActiveJobs()
@@ -50,4 +51,10 @@ class JobeetCategory extends BaseJobeetCategory {
 		
 		return JobeetJobPeer::addActiveJobsCriteria($criteria);
 	}
+
+    public function getLatestPost()
+    {
+        $jobs =  $this->getActiveJobs(1);
+        return $jobs[0];
+    }
 } // JobeetCategory
