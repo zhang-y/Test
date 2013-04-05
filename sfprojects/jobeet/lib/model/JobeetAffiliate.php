@@ -38,4 +38,30 @@ class JobeetAffiliate extends BaseJobeetAffiliate {
 		parent::__construct();
 	}
 
+    public function save(PropelPDO $con = null)
+    {
+        if(!$this->getToken())
+        {
+            $this->setToken(sha1($this->getEmail().rand(11111,99999)));
+        }
+
+        return parent::save($con);
+    }
+
+    public function getActiveJobs()
+    {
+        $cas = $this->getJobeetCategoryAffiliates();
+        $categories = array();
+        foreach($cas as $ca)
+        {
+            $categories[] = $ca->getCategoryId();
+        }
+
+        $criteria = new Criteria();
+        $criteria ->add(JobeetJobPeer::CATEGORY_ID, $categories, Criteria::IN);
+        JobeetJobPeer::addActiveJobsCriteria($criteria);
+
+        return JobeetJobPeer::doSelect($criteria);
+    }
+
 } // JobeetAffiliate
