@@ -14,8 +14,7 @@ class JobeetTestFunctional extends sfTestFunctional
   public function getMostRecentProgrammingJob()
   {
     // most recent job in the programming category
-    $criteria = new Criteria();
-    $criteria->add(JobeetCategoryPeer::SLUG, 'programming');
+    $criteria =  JobeetCategoryPeer::getForSlug('programming');
     $category = JobeetCategoryPeer::doSelectOne($criteria);
  
     $criteria = new Criteria();
@@ -68,6 +67,13 @@ class JobeetTestFunctional extends sfTestFunctional
       $criteria->add(JobeetJobPeer::POSITION,$position);
 
       return JobeetJobPeer::doSelectOne($criteria);
+  }
+
+  public function getProgrammingCategory()
+  {
+      $criteria = JobeetCategoryPeer::getForSlug('programming');
+
+      return JobeetCategoryPeer::doSelectOne($criteria);
   }
 }
 ?>

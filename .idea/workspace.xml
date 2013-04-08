@@ -2,12 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="734d9dab-88fa-4c0a-a043-d23e326117a9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sfprojects/jobeet/data/fixtures/030_affiliates.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/api/templates/listSuccess.xml.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetAffiliate.php" afterPath="$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetAffiliate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetAffiliatePeer.php" afterPath="$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetAffiliatePeer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetJob.php" afterPath="$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetJob.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetJobPeer.php" afterPath="$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetJobPeer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sfprojects/jobeet/test/fixtures/030_affiliates.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sfprojects/jobeet/config/error/error.yaml.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sfprojects/jobeet/config/error/exception.yaml.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/templates/layout.yaml.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/api/templates/listSuccess.json.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/api/templates/listSuccess.yaml.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/affiliate/templates/waitSuccess.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sfprojects/jobeet/lib/form/JobeetAffiliateForm.class.php" afterPath="$PROJECT_DIR$/sfprojects/jobeet/lib/form/JobeetAffiliateForm.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetCategoryPeer.php" afterPath="$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetCategoryPeer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sfprojects/jobeet/lib/test/JobeetTestFunctional.class.php" afterPath="$PROJECT_DIR$/sfprojects/jobeet/lib/test/JobeetTestFunctional.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sfprojects/jobeet/cache/frontend/prod/config/config_app.yml.php" afterPath="$PROJECT_DIR$/sfprojects/jobeet/cache/frontend/prod/config/config_app.yml.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sfprojects/jobeet/cache/frontend/prod/config/config_autoload.yml.php" afterPath="$PROJECT_DIR$/sfprojects/jobeet/cache/frontend/prod/config/config_autoload.yml.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sfprojects/jobeet/cache/frontend/prod/config/config_config_handlers.yml.php" afterPath="$PROJECT_DIR$/sfprojects/jobeet/cache/frontend/prod/config/config_config_handlers.yml.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sfprojects/jobeet/cache/frontend/prod/config/config_core_compile.yml.php" afterPath="$PROJECT_DIR$/sfprojects/jobeet/cache/frontend/prod/config/config_core_compile.yml.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sfprojects/jobeet/cache/frontend/prod/config/config_databases.yml.php" afterPath="$PROJECT_DIR$/sfprojects/jobeet/cache/frontend/prod/config/config_databases.yml.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sfprojects/jobeet/cache/frontend/prod/config/config_factories.yml.php" afterPath="$PROJECT_DIR$/sfprojects/jobeet/cache/frontend/prod/config/config_factories.yml.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sfprojects/jobeet/cache/frontend/prod/config/config_routing.yml.php" afterPath="$PROJECT_DIR$/sfprojects/jobeet/cache/frontend/prod/config/config_routing.yml.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sfprojects/jobeet/cache/frontend/prod/config/config_settings.yml.php" afterPath="$PROJECT_DIR$/sfprojects/jobeet/cache/frontend/prod/config/config_settings.yml.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/templates/layout.php" afterPath="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/templates/layout.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/config/routing.yml" afterPath="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/config/routing.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -15,26 +28,26 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/indexSuccess.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365069895944" ignored="false" />
     <file path="/jobs.css" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1364539661763" ignored="false" />
-    <file path="/layout.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365058829299" ignored="false" />
+    <file path="/layout.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365396863495" ignored="false" />
     <file path="/main.css" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1364543636029" ignored="false" />
     <file path="/view.yml" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1364543987866" ignored="false" />
     <file path="/JobeetJobForm.class.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1364890741787" ignored="false" />
-    <file path="/actions.class.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365157135007" ignored="false" />
+    <file path="/actions.class.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365400698404" ignored="false" />
     <file path="/JobeetJob.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365157873702" ignored="false" />
-    <file path="/routing.yml" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365155479300" ignored="false" />
+    <file path="/routing.yml" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365393150328" ignored="false" />
     <file path="/showSuccess.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365128764895" ignored="false" />
     <file path="/_admin.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1364810173529" ignored="false" />
     <file path="/JobeetJobPeer.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365155952159" ignored="false" />
-    <file path="/JobeetCategoryPeer.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1364796941799" ignored="false" />
+    <file path="/JobeetCategoryPeer.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365401208160" ignored="false" />
     <file path="/jobActionsTest.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365046046748" ignored="false" />
-    <file path="/JobeetTestFunctional.class.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365050073955" ignored="false" />
+    <file path="/JobeetTestFunctional.class.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365401563657" ignored="false" />
     <file path="/JobeetCleanupTask.class.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1364814708987" ignored="false" />
     <file path="/generator.yml" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1364897074672" ignored="false" />
     <file path="/JobeetCategoryForm.class.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1364890065432" ignored="false" />
     <file path="/_generated_token.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1364890270917" ignored="false" />
     <file path="/BackendJobeetJobForm.class.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1364892073950" ignored="false" />
     <file path="/a.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1364902070275" ignored="false" />
-    <file path="/Dummy.txt" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365159055053" ignored="false" />
+    <file path="/Dummy.txt" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365388401506" ignored="false" />
     <file path="/myUser.class.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365042799266" ignored="false" />
     <file path="/security.yml" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365039767499" ignored="false" />
     <file path="/settings.yml" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365045500030" ignored="false" />
@@ -46,6 +59,15 @@
     <file path="/JobeetAffiliate.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365156701522" ignored="false" />
     <file path="/JobeetAffiliatePeer.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365156173199" ignored="false" />
     <file path="/listSuccess.xml.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365159021952" ignored="false" />
+    <file path="/listSuccess.json.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365388988819" ignored="false" />
+    <file path="/listSuccess.yaml.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365389497587" ignored="false" />
+    <file path="/layout.yaml.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365389657653" ignored="false" />
+    <file path="/exception.yaml.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365389912884" ignored="false" />
+    <file path="/error.yaml.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365390873509" ignored="false" />
+    <file path="/apiActionsTest.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365392713515" ignored="false" />
+    <file path="/newSuccess.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365399781639" ignored="false" />
+    <file path="/waitSuccess.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365396429608" ignored="false" />
+    <file path="/JobeetAffiliateForm.class.php" changelist="734d9dab-88fa-4c0a-a043-d23e326117a9" time="1365397605342" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,57 +87,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="030_affiliates.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/data/fixtures/030_affiliates.yml">
+      <file leaf-file-name="waitSuccess.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/affiliate/templates/waitSuccess.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="32" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JobeetAffiliate.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetAffiliate.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="7" selection-start="659" selection-end="659" vertical-scroll-proportion="-0.20689656">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="actions.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/api/actions/actions.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="16" selection-start="509" selection-end="509" vertical-scroll-proportion="-17.931034">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JobeetJob.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetJob.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="34" selection-start="1288" selection-end="1288" vertical-scroll-proportion="-12.862069">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listSuccess.xml.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/api/templates/listSuccess.xml.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="7" selection-start="360" selection-end="360" vertical-scroll-proportion="0.27906978">
+            <state line="6" column="6" selection-start="202" selection-end="202" vertical-scroll-proportion="-4.137931">
               <folding>
-                <marker date="1365159035363" expanded="true" signature="62:358" placeholder="..." />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseJobeetJob.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/lib/model/om/BaseJobeetJob.php">
+      <file leaf-file-name="layout.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/templates/layout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1679" column="0" selection-start="46793" selection-end="46793" vertical-scroll-proportion="-2.5185184">
+            <state line="83" column="76" selection-start="2991" selection-end="2991" vertical-scroll-proportion="-19.758621">
               <folding />
             </state>
           </provider>
@@ -124,34 +110,34 @@
       <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
+            <state line="4" column="10" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JobeetJobPeer.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetJobPeer.php">
+      <file leaf-file-name="affiliateActionsTest.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/test/functional/frontend/affiliateActionsTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="23" selection-start="2031" selection-end="2031" vertical-scroll-proportion="-18.37931">
+            <state line="27" column="59" selection-start="995" selection-end="995" vertical-scroll-proportion="-18.62069">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JobeetAffiliatePeer.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetAffiliatePeer.php">
+      <file leaf-file-name="apiActionsTest.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/test/functional/frontend/apiActionsTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="44" selection-start="660" selection-end="660" vertical-scroll-proportion="-16.551723">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="020_jobs.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/data/fixtures/020_jobs.yml">
+      <file leaf-file-name="JobeetTestFunctional.class.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/lib/test/JobeetTestFunctional.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="48" column="17" selection-start="1620" selection-end="1620" vertical-scroll-proportion="0.092055485">
               <folding />
             </state>
           </provider>
@@ -180,22 +166,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/job/templates/indexSuccess.php" />
-        <option value="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/job/templates/showSuccess.atom.php" />
-        <option value="$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetCategory.php" />
-        <option value="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/templates/layout.php" />
-        <option value="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/job/templates/indexSuccess.atom.php" />
-        <option value="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/job/templates/_list.atom.php" />
-        <option value="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/job/templates/showSuccess.php" />
-        <option value="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/category/templates/showSuccess.atom.php" />
-        <option value="$PROJECT_DIR$/sfprojects/jobeet/data/fixtures/030_affiliates.yml" />
-        <option value="$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetJobPeer.php" />
-        <option value="$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetAffiliatePeer.php" />
-        <option value="$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetAffiliate.php" />
+        <option value="$PROJECT_DIR$/sfprojects/jobeet/test/functional/frontend/apiActionsTest.php" />
+        <option value="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/affliate/templates/newSuccess.php" />
+        <option value="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/affliate/templates/_form.php" />
+        <option value="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/affliate/templates/waitSuccess.php" />
+        <option value="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/job/actions/actions.class.php" />
+        <option value="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/affliate/actions/actions.class.php" />
         <option value="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/config/routing.yml" />
-        <option value="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/api/actions/actions.class.php" />
-        <option value="$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetJob.php" />
-        <option value="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/api/templates/listSuccess.xml.php" />
+        <option value="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/affiliate/templates/newSuccess.php" />
+        <option value="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/affiliate/templates/_form.php" />
+        <option value="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/affiliate/templates/waitSuccess.php" />
+        <option value="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/templates/layout.php" />
+        <option value="$PROJECT_DIR$/sfprojects/jobeet/lib/form/JobeetAffiliateForm.class.php" />
+        <option value="$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/affiliate/actions/actions.class.php" />
+        <option value="$PROJECT_DIR$/sfprojects/jobeet/test/functional/frontend/affiliateActionsTest.php" />
+        <option value="$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetCategoryPeer.php" />
+        <option value="$PROJECT_DIR$/sfprojects/jobeet/lib/test/JobeetTestFunctional.class.php" />
       </list>
     </option>
   </component>
@@ -303,7 +289,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -330,6 +316,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -393,7 +383,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
+              <option name="myItemId" value="affiliate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -431,7 +421,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
+              <option name="myItemId" value="affiliate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -464,10 +454,6 @@
               <option name="myItemId" value="frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -490,6 +476,10 @@
               <option name="myItemId" value="apps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -501,8 +491,8 @@
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -516,6 +506,9 @@
     </servers>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\test\fixtures" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules\category\templates" />
       <recent name="C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\backend\modules\job\templates" />
@@ -570,20 +563,22 @@
       <created>1365153067083</created>
       <updated>1365153067083</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="web services_xml">
+      <created>1365159071638</created>
+      <updated>1365159071638</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-264" width="1296" height="1040" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18295455" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.175" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26860842" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2961165" sideWeight="0.81704545" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3066343" sideWeight="0.72431505" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -592,6 +587,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.175" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27568492" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -659,123 +656,135 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/job/actions/actions.class.php</url>
+          <line>20</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/job/templates/indexSuccess.php">
+    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/job/templates/_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="215" selection-end="365" vertical-scroll-proportion="-5.5172415">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/job/templates/showSuccess.php">
+    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/job/templates/indexSuccess.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="48" selection-start="561" selection-end="561" vertical-scroll-proportion="1.6551725">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1365069924842" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1365069924842" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1365069924842" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1365069924842" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1365069924842" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1365069924842" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/job/templates/editSuccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/templates/layout.yaml.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/job/actions/actions.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="405" selection-end="405" vertical-scroll-proportion="-6.206897">
+        <state line="17" column="0" selection-start="405" selection-end="405" vertical-scroll-proportion="-8.965517">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/category/templates/showSuccess.atom.php">
+    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/affiliate/templates/newSuccess.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="7" selection-start="762" selection-end="762" vertical-scroll-proportion="-8.965517">
+        <state line="1" column="0" selection-start="35" selection-end="35" vertical-scroll-proportion="-0.6896552">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/affiliate/templates/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="3" selection-start="297" selection-end="297" vertical-scroll-proportion="-8.275862">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/lib/form/JobeetAffiliateForm.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="20" selection-start="372" selection-end="372" vertical-scroll-proportion="0.40973112">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetCategoryPeer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="10" selection-start="827" selection-end="827" vertical-scroll-proportion="0.7692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/affiliate/actions/actions.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="3" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.8991173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/affiliate/templates/waitSuccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="6" selection-start="202" selection-end="202" vertical-scroll-proportion="-4.137931">
           <folding>
-            <marker date="1365153029510" expanded="true" signature="-1:-1" placeholder="..." />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/config/databases.yml">
+    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/templates/layout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/data/fixtures/010_categories.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/data/fixtures/020_jobs.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/data/fixtures/030_affiliates.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="32" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetJobPeer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="23" selection-start="2031" selection-end="2031" vertical-scroll-proportion="-18.37931">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetAffiliatePeer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="44" selection-start="660" selection-end="660" vertical-scroll-proportion="-16.551723">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetAffiliate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="7" selection-start="659" selection-end="659" vertical-scroll-proportion="-0.20689656">
+        <state line="83" column="76" selection-start="2991" selection-end="2991" vertical-scroll-proportion="-19.758621">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
+        <state line="4" column="10" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/api/actions/actions.class.php">
+    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/test/functional/frontend/affiliateActionsTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="16" selection-start="509" selection-end="509" vertical-scroll-proportion="-17.931034">
+        <state line="27" column="59" selection-start="995" selection-end="995" vertical-scroll-proportion="-18.62069">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/lib/model/om/BaseJobeetJob.php">
+    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/test/functional/frontend/apiActionsTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1679" column="0" selection-start="46793" selection-end="46793" vertical-scroll-proportion="-2.5185184">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/lib/model/JobeetJob.php">
+    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/lib/test/JobeetTestFunctional.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="34" selection-start="1288" selection-end="1288" vertical-scroll-proportion="-12.862069">
+        <state line="48" column="17" selection-start="1620" selection-end="1620" vertical-scroll-proportion="0.092055485">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sfprojects/jobeet/apps/frontend/modules/api/templates/listSuccess.xml.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="7" selection-start="360" selection-end="360" vertical-scroll-proportion="0.27906978">
-          <folding>
-            <marker date="1365159035363" expanded="true" signature="62:358" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>

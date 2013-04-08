@@ -1,0 +1,15 @@
+# data/fixtures/030_affiliates.yml
+JobeetAffiliate:
+  sensio_labs:
+    url:       http://www.sensio-labs.com
+    email:     zhangyiqun0223@gmail.com
+    is_active: true
+    token:     sensio_labs
+    jobeet_category_affiliates: [programming]
+
+  symfony:
+    url:        /
+    email:      zhangyiqun0223@yahoo.cn
+    is_active:  false
+    token:      symfony
+    jobeet_category_affiliates: [design, programming]
