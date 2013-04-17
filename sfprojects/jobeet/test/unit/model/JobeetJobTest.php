@@ -2,7 +2,7 @@
 // test/unit/model/JobeetJobTest.php
 include(dirname(__FILE__).'/../../bootstrap/Propel.php');
  
-$t = new lime_test(3);
+$t = new lime_test(7);
 
 $t->comment('->getCompanySlug()');
 $job = JobeetJobPeer::doSelectOne(new Criteria());
@@ -17,6 +17,23 @@ $t->is($job->getExpiresAt('Y-m-d'), $expiresAt, '->save() updates expires_at if 
 $job = create_job(array('expires_at' => '2008-08-08'));
 $job->save();
 $t->is($job->getExpiresAt('Y-m-d'), '2008-08-08', '->save() does not update expires_at if set');
+
+$t->comment('->getForLuceneQuery()');
+$job = create_job(array('position' => 'foobar', 'is_activated' => false));
+$job->save();
+$jobs = JobeetJobPeer::getForLuceneQuery('position:foobar');
+$t->is(count($jobs),0,'::getForLuceneQuery() does not return non activated jobs');
+
+$job = create_job(array('position' => 'foobar', 'is_activated'=> true));
+$job->save();
+$jobs = JobeetJobPeer::getForLuceneQuery('position:foobar');
+$t->is(count($jobs),1,'::getForLuceneQuery() returns jobs matching the criteria');
+$t->is($jobs[0]->getId(), $job->getId(), '::getForLuceneQuery() returns jobs matching the criteria');
+
+$job->delete();
+$jobs = JobeetJobPeer::getForLuceneQuery('position:foobar');
+$t->is(count($jobs), 0, '::getForLuceneQuery() does not return deleted jobs');
+
  
 function create_job($defaults = array())
 {

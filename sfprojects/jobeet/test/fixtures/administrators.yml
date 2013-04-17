@@ -1,0 +1,7 @@
+sfGuardUser:
+  admin:
+    email_address: admin@example.com
+    username: admin
+    password: Fabien
+    last_name: Potencier
+    is_super_admin: true

@@ -2399,3 +2399,749 @@ Apr 05 17:58:57 symfony [info] {sfWebDebugLogger} Action "job/new" 68.18 ms (1)
 Apr 05 17:58:57 symfony [info] {sfWebDebugLogger} View "Success" for "job/new" 362.85 ms (1)
 Apr 05 17:58:57 symfony [info] {sfWebDebugLogger} Partial "job/_form" 32.62 ms (1)
 Apr 05 17:58:57 symfony [info] {sfWebResponse} Send content (111497 o)
+Apr 15 21:32:31 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Apr 15 21:32:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:32:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:32:31 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Apr 15 21:32:31 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib/controller/default/templates/indexSuccess.php"
+Apr 15 21:32:31 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+Apr 15 21:32:31 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+Apr 15 21:32:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:32:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:32:31 symfony [info] {sfWebDebugLogger} Configuration 383.54 ms (9)
+Apr 15 21:32:31 symfony [info] {sfWebDebugLogger} Factories 116.27 ms (1)
+Apr 15 21:32:31 symfony [info] {sfWebDebugLogger} Action "default/index" 0.15 ms (1)
+Apr 15 21:32:31 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 29.17 ms (1)
+Apr 15 21:32:31 symfony [info] {sfWebResponse} Send content (49710 o)
+Apr 15 21:32:35 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+Apr 15 21:32:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:32:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:32:35 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 15 21:32:35 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.3 MB | mempeak:    6.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:32:35 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.5 MB | mempeak:    6.5 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2013-04-15 21:32:35' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Apr 15 21:32:35 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 15 21:32:35 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.3 MB | mempeak:    7.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:32:35' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Apr 15 21:32:35 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:32:35 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.8 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:32:35' AND jobeet_job.IS_ACTIVATED=1
+Apr 15 21:32:35 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:32:35 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:32:35 symfony [info] {main} Get slot "title"
+Apr 15 21:32:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:32:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:32:35 symfony [info] {sfWebDebugLogger} Configuration 332.23 ms (11)
+Apr 15 21:32:35 symfony [info] {sfWebDebugLogger} Factories 51.44 ms (1)
+Apr 15 21:32:35 symfony [info] {sfWebDebugLogger} Action "job/index" 31.74 ms (1)
+Apr 15 21:32:35 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 311.28 ms (1)
+Apr 15 21:32:35 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.06 ms (1)
+Apr 15 21:32:35 symfony [info] {sfWebResponse} Send content (104769 o)
+Apr 15 21:32:43 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:32:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:32:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:32:43 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:32:43 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:32:43 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:32:43' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:32:43 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:32:43 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:32:43 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:32:43 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:32:43 symfony [info] {main} Get slot "title"
+Apr 15 21:32:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:32:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:32:43 symfony [info] {sfWebDebugLogger} Configuration 366.90 ms (11)
+Apr 15 21:32:43 symfony [info] {sfWebDebugLogger} Factories 56.47 ms (1)
+Apr 15 21:32:43 symfony [info] {sfWebDebugLogger} Action "job/search" 142.91 ms (1)
+Apr 15 21:32:43 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 364.73 ms (1)
+Apr 15 21:32:43 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.64 ms (1)
+Apr 15 21:32:43 symfony [info] {sfWebResponse} Send content (79861 o)
+Apr 15 21:34:23 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+Apr 15 21:34:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:34:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:34:23 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 15 21:34:23 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:34:23 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2013-04-15 21:34:23' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Apr 15 21:34:23 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 15 21:34:23 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=6 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:34:23' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Apr 15 21:34:23 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:34:23 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.5 MB | mempeak:    8.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=6 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:34:23' AND jobeet_job.IS_ACTIVATED=1
+Apr 15 21:34:23 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:34:23 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:34:24 symfony [info] {main} Get slot "title"
+Apr 15 21:34:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:34:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:34:24 symfony [info] {sfWebDebugLogger} Configuration 649.72 ms (10)
+Apr 15 21:34:24 symfony [info] {sfWebDebugLogger} Factories 103.14 ms (1)
+Apr 15 21:34:24 symfony [info] {sfWebDebugLogger} Action "job/index" 31.97 ms (1)
+Apr 15 21:34:24 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 313.54 ms (1)
+Apr 15 21:34:24 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.21 ms (1)
+Apr 15 21:34:24 symfony [info] {sfWebResponse} Send content (104771 o)
+Apr 15 21:34:28 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:34:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:34:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:34:28 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:34:28 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:34:28 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    8.5 MB | mempeak:    8.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('38','39','40','41','37','36','33','34','35','38'0,'38'1,'38'2,'38'3,'38'4,'38'5,'38'6,'38'7,'38'8,'38'9,'39'0,'39'1,'39'2,'39'3,'39'4,'39'5,'39'6,'39'7,'39'8,'39'9,'40'0,'40'1) AND jobeet_job.EXPIRES_AT>'40'2 AND jobeet_job.IS_ACTIVATED='40'3 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:34:28 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:34:28 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:34:28 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:34:28 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:34:29 symfony [info] {main} Get slot "title"
+Apr 15 21:34:29 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:88))
+Apr 15 21:34:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:34:29 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:88))
+Apr 15 21:34:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:34:29 symfony [info] {sfWebDebugLogger} Configuration 321.17 ms (11)
+Apr 15 21:34:29 symfony [info] {sfWebDebugLogger} Factories 49.96 ms (1)
+Apr 15 21:34:29 symfony [info] {sfWebDebugLogger} Action "job/search" 249.78 ms (1)
+Apr 15 21:34:29 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 328.88 ms (1)
+Apr 15 21:34:29 symfony [info] {sfWebDebugLogger} Partial "job/_list" 11.25 ms (1)
+Apr 15 21:34:29 symfony [info] {sfWebResponse} Send content (86904 o)
+Apr 15 21:34:45 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:34:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:34:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:34:45 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:34:45 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:34:45 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:34:45' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:34:45 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:34:45 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:34:45 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:34:45 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:34:45 symfony [info] {main} Get slot "title"
+Apr 15 21:34:45 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:88))
+Apr 15 21:34:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:34:45 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:88))
+Apr 15 21:34:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:34:45 symfony [info] {sfWebDebugLogger} Configuration 329.30 ms (11)
+Apr 15 21:34:45 symfony [info] {sfWebDebugLogger} Factories 53.66 ms (1)
+Apr 15 21:34:45 symfony [info] {sfWebDebugLogger} Action "job/search" 152.15 ms (1)
+Apr 15 21:34:45 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 333.09 ms (1)
+Apr 15 21:34:45 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.60 ms (1)
+Apr 15 21:34:45 symfony [info] {sfWebResponse} Send content (79876 o)
+Apr 15 21:34:51 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:34:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:34:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:34:51 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:34:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:34:51 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    8.5 MB | mempeak:    8.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('38','39','40','41','37','36','33','34','35','38'0,'38'1,'38'2,'38'3,'38'4,'38'5,'38'6,'38'7,'38'8,'38'9,'39'0,'39'1,'39'2,'39'3,'39'4,'39'5,'39'6,'39'7,'39'8,'39'9,'40'0,'40'1) AND jobeet_job.EXPIRES_AT>'40'2 AND jobeet_job.IS_ACTIVATED='40'3 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:34:51 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:34:51 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:34:51 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:34:51 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:34:51 symfony [info] {main} Get slot "title"
+Apr 15 21:34:51 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:88))
+Apr 15 21:34:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:34:51 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:88))
+Apr 15 21:34:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:34:51 symfony [info] {sfWebDebugLogger} Configuration 320.87 ms (11)
+Apr 15 21:34:51 symfony [info] {sfWebDebugLogger} Factories 55.32 ms (1)
+Apr 15 21:34:51 symfony [info] {sfWebDebugLogger} Action "job/search" 243.46 ms (1)
+Apr 15 21:34:51 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 330.60 ms (1)
+Apr 15 21:34:51 symfony [info] {sfWebDebugLogger} Partial "job/_list" 11.29 ms (1)
+Apr 15 21:34:51 symfony [info] {sfWebResponse} Send content (86929 o)
+Apr 15 21:36:29 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:36:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:36:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:36:29 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:36:29 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:36:29 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    8.5 MB | mempeak:    8.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('38','39','40','41','37','36','33','34','35','38'0,'38'1,'38'2,'38'3,'38'4,'38'5,'38'6,'38'7,'38'8,'38'9,'39'0,'39'1,'39'2,'39'3,'39'4,'39'5,'39'6,'39'7,'39'8,'39'9,'40'0,'40'1) AND jobeet_job.EXPIRES_AT>'40'2 AND jobeet_job.IS_ACTIVATED='40'3 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:36:29 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:36:29 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:36:29 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:36:29 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:36:29 symfony [info] {main} Get slot "title"
+Apr 15 21:36:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:36:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:36:30 symfony [info] {sfWebDebugLogger} Configuration 315.51 ms (11)
+Apr 15 21:36:30 symfony [info] {sfWebDebugLogger} Factories 55.29 ms (1)
+Apr 15 21:36:30 symfony [info] {sfWebDebugLogger} Action "job/search" 234.55 ms (1)
+Apr 15 21:36:30 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 326.39 ms (1)
+Apr 15 21:36:30 symfony [info] {sfWebDebugLogger} Partial "job/_list" 11.29 ms (1)
+Apr 15 21:36:30 symfony [info] {sfWebResponse} Send content (86933 o)
+Apr 15 21:39:23 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:39:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:39:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:39:24 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:39:24 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:39:24 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:39:24' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:39:24 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:39:24 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:39:24 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:39:24 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:39:24 symfony [info] {main} Get slot "title"
+Apr 15 21:39:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:39:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:39:24 symfony [info] {sfWebDebugLogger} Configuration 326.45 ms (11)
+Apr 15 21:39:24 symfony [info] {sfWebDebugLogger} Factories 51.75 ms (1)
+Apr 15 21:39:24 symfony [info] {sfWebDebugLogger} Action "job/search" 167.73 ms (1)
+Apr 15 21:39:24 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 336.01 ms (1)
+Apr 15 21:39:24 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.68 ms (1)
+Apr 15 21:39:24 symfony [info] {sfWebResponse} Send content (79860 o)
+Apr 15 21:39:51 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+Apr 15 21:39:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:39:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:39:51 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 15 21:39:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.5 MB | mempeak:    5.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:39:51 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2013-04-15 21:39:51' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Apr 15 21:39:51 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 15 21:39:51 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.5 MB | mempeak:    6.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=6 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:39:51' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Apr 15 21:39:51 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:39:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=6 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:39:51' AND jobeet_job.IS_ACTIVATED=1
+Apr 15 21:39:51 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:39:51 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:39:52 symfony [info] {main} Get slot "title"
+Apr 15 21:39:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:39:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:39:52 symfony [info] {sfWebDebugLogger} Configuration 333.17 ms (11)
+Apr 15 21:39:52 symfony [info] {sfWebDebugLogger} Factories 56.02 ms (1)
+Apr 15 21:39:52 symfony [info] {sfWebDebugLogger} Action "job/index" 33.47 ms (1)
+Apr 15 21:39:52 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 345.95 ms (1)
+Apr 15 21:39:52 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.36 ms (1)
+Apr 15 21:39:52 symfony [info] {sfWebResponse} Send content (104851 o)
+Apr 15 21:39:57 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:39:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:39:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:39:57 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:39:57 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:39:57 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:39:57' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:39:57 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:39:57 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:39:57 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:39:57 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:39:58 symfony [info] {main} Get slot "title"
+Apr 15 21:39:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:39:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:39:58 symfony [info] {sfWebDebugLogger} Configuration 325.53 ms (11)
+Apr 15 21:39:58 symfony [info] {sfWebDebugLogger} Factories 51.72 ms (1)
+Apr 15 21:39:58 symfony [info] {sfWebDebugLogger} Action "job/search" 126.16 ms (1)
+Apr 15 21:39:58 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 328.29 ms (1)
+Apr 15 21:39:58 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.56 ms (1)
+Apr 15 21:39:58 symfony [info] {sfWebResponse} Send content (79837 o)
+Apr 15 21:40:03 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:40:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:40:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:40:03 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:40:03 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:40:03 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:40:03' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:40:03 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:40:03 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:40:03 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:40:03 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:40:04 symfony [info] {main} Get slot "title"
+Apr 15 21:40:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:40:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:40:04 symfony [info] {sfWebDebugLogger} Configuration 322.83 ms (11)
+Apr 15 21:40:04 symfony [info] {sfWebDebugLogger} Factories 52.86 ms (1)
+Apr 15 21:40:04 symfony [info] {sfWebDebugLogger} Action "job/search" 112.48 ms (1)
+Apr 15 21:40:04 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 321.79 ms (1)
+Apr 15 21:40:04 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.86 ms (1)
+Apr 15 21:40:04 symfony [info] {sfWebResponse} Send content (79874 o)
+Apr 15 21:40:06 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:40:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:40:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:40:06 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:40:06 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:40:06 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:40:06' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:40:06 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:40:06 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:40:06 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:40:06 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:40:06 symfony [info] {main} Get slot "title"
+Apr 15 21:40:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:40:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:40:06 symfony [info] {sfWebDebugLogger} Configuration 323.03 ms (11)
+Apr 15 21:40:06 symfony [info] {sfWebDebugLogger} Factories 52.88 ms (1)
+Apr 15 21:40:06 symfony [info] {sfWebDebugLogger} Action "job/search" 112.79 ms (1)
+Apr 15 21:40:06 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 321.90 ms (1)
+Apr 15 21:40:06 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.59 ms (1)
+Apr 15 21:40:06 symfony [info] {sfWebResponse} Send content (79878 o)
+Apr 15 21:40:07 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:40:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:40:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:40:08 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:40:08 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:40:08 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:40:08' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:40:08 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:40:08 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:40:08 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:40:08 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:40:08 symfony [info] {main} Get slot "title"
+Apr 15 21:40:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:40:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:40:08 symfony [info] {sfWebDebugLogger} Configuration 327.89 ms (11)
+Apr 15 21:40:08 symfony [info] {sfWebDebugLogger} Factories 55.94 ms (1)
+Apr 15 21:40:08 symfony [info] {sfWebDebugLogger} Action "job/search" 108.71 ms (1)
+Apr 15 21:40:08 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 327.94 ms (1)
+Apr 15 21:40:08 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.72 ms (1)
+Apr 15 21:40:08 symfony [info] {sfWebResponse} Send content (79878 o)
+Apr 15 21:40:09 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:40:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:40:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:40:09 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:40:09 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:40:09 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:40:09' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:40:09 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:40:09 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:40:09 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:40:09 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:40:09 symfony [info] {main} Get slot "title"
+Apr 15 21:40:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:40:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:40:09 symfony [info] {sfWebDebugLogger} Configuration 324.29 ms (11)
+Apr 15 21:40:09 symfony [info] {sfWebDebugLogger} Factories 52.48 ms (1)
+Apr 15 21:40:09 symfony [info] {sfWebDebugLogger} Action "job/search" 106.18 ms (1)
+Apr 15 21:40:09 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 328.76 ms (1)
+Apr 15 21:40:09 symfony [info] {sfWebDebugLogger} Partial "job/_list" 1.10 ms (1)
+Apr 15 21:40:09 symfony [info] {sfWebResponse} Send content (79878 o)
+Apr 15 21:40:16 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:40:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:40:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:40:16 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:40:16 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:40:16 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:40:16' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:40:16 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:40:16 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:40:16 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:40:16 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:40:16 symfony [info] {main} Get slot "title"
+Apr 15 21:40:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:40:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:40:16 symfony [info] {sfWebDebugLogger} Configuration 321.49 ms (11)
+Apr 15 21:40:16 symfony [info] {sfWebDebugLogger} Factories 52.23 ms (1)
+Apr 15 21:40:16 symfony [info] {sfWebDebugLogger} Action "job/search" 106.94 ms (1)
+Apr 15 21:40:16 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 320.57 ms (1)
+Apr 15 21:40:16 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.55 ms (1)
+Apr 15 21:40:16 symfony [info] {sfWebResponse} Send content (79866 o)
+Apr 15 21:41:11 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:41:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:41:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:41:11 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:41:11 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:41:11 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:41:11' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:41:11 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:41:11 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:41:11 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:41:11 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:41:11 symfony [info] {main} Get slot "title"
+Apr 15 21:41:11 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:41:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:41:11 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:41:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:41:11 symfony [info] {sfWebDebugLogger} Configuration 315.75 ms (11)
+Apr 15 21:41:11 symfony [info] {sfWebDebugLogger} Factories 51.17 ms (1)
+Apr 15 21:41:11 symfony [info] {sfWebDebugLogger} Action "job/search" 105.26 ms (1)
+Apr 15 21:41:11 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 317.29 ms (1)
+Apr 15 21:41:11 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.59 ms (1)
+Apr 15 21:41:11 symfony [info] {sfWebResponse} Send content (79864 o)
+Apr 15 21:41:37 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:41:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:41:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:41:37 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:41:37 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:41:37 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.5 MB | mempeak:    9.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:41:37' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:41:37 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:41:37 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:41:37 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:41:37 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:41:37 symfony [info] {main} Get slot "title"
+Apr 15 21:41:37 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:41:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:41:37 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:41:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:41:37 symfony [info] {sfWebDebugLogger} Configuration 645.77 ms (10)
+Apr 15 21:41:37 symfony [info] {sfWebDebugLogger} Factories 101.78 ms (1)
+Apr 15 21:41:37 symfony [info] {sfWebDebugLogger} Action "job/search" 87.79 ms (1)
+Apr 15 21:41:37 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 295.48 ms (1)
+Apr 15 21:41:37 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.57 ms (1)
+Apr 15 21:41:37 symfony [info] {sfWebResponse} Send content (79864 o)
+Apr 15 21:42:16 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:42:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:42:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:42:16 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:42:16 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:42:16 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:42:16' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:42:16 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:42:16 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:42:16 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:42:16 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:42:17 symfony [info] {main} Get slot "title"
+Apr 15 21:42:17 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:42:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:42:17 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:42:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:42:17 symfony [info] {sfWebDebugLogger} Configuration 313.04 ms (11)
+Apr 15 21:42:17 symfony [info] {sfWebDebugLogger} Factories 51.43 ms (1)
+Apr 15 21:42:17 symfony [info] {sfWebDebugLogger} Action "job/search" 104.99 ms (1)
+Apr 15 21:42:17 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 313.45 ms (1)
+Apr 15 21:42:17 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.56 ms (1)
+Apr 15 21:42:17 symfony [info] {sfWebResponse} Send content (79768 o)
+Apr 15 21:42:49 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+Apr 15 21:42:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:42:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:42:49 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 15 21:42:49 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.5 MB | mempeak:    5.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:42:49 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2013-04-15 21:42:49' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Apr 15 21:42:49 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 15 21:42:49 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.5 MB | mempeak:    6.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=6 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:42:49' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Apr 15 21:42:49 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:42:49 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.3 MB | mempeak:    7.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=6 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:42:49' AND jobeet_job.IS_ACTIVATED=1
+Apr 15 21:42:49 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:42:49 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:42:49 symfony [info] {main} Get slot "title"
+Apr 15 21:42:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:42:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:42:49 symfony [info] {sfWebDebugLogger} Configuration 317.05 ms (11)
+Apr 15 21:42:49 symfony [info] {sfWebDebugLogger} Factories 53.17 ms (1)
+Apr 15 21:42:49 symfony [info] {sfWebDebugLogger} Action "job/index" 31.20 ms (1)
+Apr 15 21:42:49 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 333.81 ms (1)
+Apr 15 21:42:49 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.33 ms (1)
+Apr 15 21:42:49 symfony [info] {sfWebResponse} Send content (104852 o)
+Apr 15 21:43:11 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:43:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:43:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:43:11 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:43:11 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:43:11 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:43:11' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:43:11 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:43:11 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:43:11 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:43:11 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:43:12 symfony [info] {main} Get slot "title"
+Apr 15 21:43:12 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:43:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:43:12 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:43:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:43:12 symfony [info] {sfWebDebugLogger} Configuration 318.54 ms (11)
+Apr 15 21:43:12 symfony [info] {sfWebDebugLogger} Factories 51.88 ms (1)
+Apr 15 21:43:12 symfony [info] {sfWebDebugLogger} Action "job/search" 104.78 ms (1)
+Apr 15 21:43:12 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 319.47 ms (1)
+Apr 15 21:43:12 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.58 ms (1)
+Apr 15 21:43:12 symfony [info] {sfWebResponse} Send content (79855 o)
+Apr 15 21:44:01 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:44:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:44:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:44:01 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:44:01 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:44:01 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:44:01' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:44:01 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:44:01 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:44:01 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:44:01 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:44:01 symfony [info] {main} Get slot "title"
+Apr 15 21:44:01 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:114))
+Apr 15 21:44:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:44:01 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:114))
+Apr 15 21:44:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:44:01 symfony [info] {sfWebDebugLogger} Configuration 324.68 ms (11)
+Apr 15 21:44:01 symfony [info] {sfWebDebugLogger} Factories 51.56 ms (1)
+Apr 15 21:44:01 symfony [info] {sfWebDebugLogger} Action "job/search" 105.94 ms (1)
+Apr 15 21:44:01 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 324.12 ms (1)
+Apr 15 21:44:01 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.53 ms (1)
+Apr 15 21:44:01 symfony [info] {sfWebResponse} Send content (79774 o)
+Apr 15 21:44:34 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:44:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:44:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:44:34 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:44:34 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:44:34 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:44:34' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:44:34 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:44:34 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:44:34 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:44:34 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:44:35 symfony [info] {main} Get slot "title"
+Apr 15 21:44:35 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:44:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:44:35 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:44:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:44:35 symfony [info] {sfWebDebugLogger} Configuration 309.76 ms (11)
+Apr 15 21:44:35 symfony [info] {sfWebDebugLogger} Factories 51.12 ms (1)
+Apr 15 21:44:35 symfony [info] {sfWebDebugLogger} Action "job/search" 148.07 ms (1)
+Apr 15 21:44:35 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 309.68 ms (1)
+Apr 15 21:44:35 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.54 ms (1)
+Apr 15 21:44:35 symfony [info] {sfWebResponse} Send content (79774 o)
+Apr 15 21:44:39 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+Apr 15 21:44:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:44:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:44:39 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 15 21:44:39 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.5 MB | mempeak:    5.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:44:39 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2013-04-15 21:44:39' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Apr 15 21:44:39 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 15 21:44:39 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.5 MB | mempeak:    6.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=10 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:44:39' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Apr 15 21:44:39 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:44:39 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=10 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:44:39' AND jobeet_job.IS_ACTIVATED=1
+Apr 15 21:44:39 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:44:39 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:44:39 symfony [info] {main} Get slot "title"
+Apr 15 21:44:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:44:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:44:39 symfony [info] {sfWebDebugLogger} Configuration 315.25 ms (11)
+Apr 15 21:44:39 symfony [info] {sfWebDebugLogger} Factories 52.02 ms (1)
+Apr 15 21:44:39 symfony [info] {sfWebDebugLogger} Action "job/index" 28.84 ms (1)
+Apr 15 21:44:39 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 331.47 ms (1)
+Apr 15 21:44:39 symfony [info] {sfWebDebugLogger} Partial "job/_list" 5.95 ms (1)
+Apr 15 21:44:39 symfony [info] {sfWebResponse} Send content (104867 o)
+Apr 15 21:45:13 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:45:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:45:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:45:13 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:45:14 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:45:14 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    8.5 MB | mempeak:    8.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('69','70','71','72','68','67','64','65','66','69'0,'69'1,'69'2,'69'3,'69'4,'69'5,'69'6,'69'7,'69'8,'69'9,'70'0,'70'1,'70'2,'70'3,'70'4,'70'5,'70'6,'70'7,'70'8,'70'9,'71'0,'71'1) AND jobeet_job.EXPIRES_AT>'71'2 AND jobeet_job.IS_ACTIVATED='71'3 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:45:14 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:45:14 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:45:14 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:45:14 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:45:14 symfony [info] {main} Get slot "title"
+Apr 15 21:45:14 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:45:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:45:14 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:45:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:45:14 symfony [info] {sfWebDebugLogger} Configuration 323.98 ms (11)
+Apr 15 21:45:14 symfony [info] {sfWebDebugLogger} Factories 53.83 ms (1)
+Apr 15 21:45:14 symfony [info] {sfWebDebugLogger} Action "job/search" 305.30 ms (1)
+Apr 15 21:45:14 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 334.19 ms (1)
+Apr 15 21:45:14 symfony [info] {sfWebDebugLogger} Partial "job/_list" 12.00 ms (1)
+Apr 15 21:45:14 symfony [info] {sfWebResponse} Send content (86977 o)
+Apr 15 21:45:56 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:45:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:45:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:45:56 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:45:56 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:45:56 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:45:56' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:45:56 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:45:56 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:45:56 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:45:56 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:45:56 symfony [info] {main} Get slot "title"
+Apr 15 21:45:56 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:45:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:45:56 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:45:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:45:56 symfony [info] {sfWebDebugLogger} Configuration 312.12 ms (11)
+Apr 15 21:45:56 symfony [info] {sfWebDebugLogger} Factories 52.28 ms (1)
+Apr 15 21:45:56 symfony [info] {sfWebDebugLogger} Action "job/search" 198.16 ms (1)
+Apr 15 21:45:56 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 313.10 ms (1)
+Apr 15 21:45:56 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.58 ms (1)
+Apr 15 21:45:56 symfony [info] {sfWebResponse} Send content (79927 o)
+Apr 15 21:46:16 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:46:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:46:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:46:16 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:46:16 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:46:16 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    8.5 MB | mempeak:    8.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('69','70','71','72','68','67','64','65','66','69'0,'69'1,'69'2,'69'3,'69'4,'69'5,'69'6,'69'7,'69'8,'69'9,'70'0,'70'1,'70'2,'70'3,'70'4,'70'5,'70'6,'70'7,'70'8,'70'9,'71'0,'71'1) AND jobeet_job.EXPIRES_AT>'71'2 AND jobeet_job.IS_ACTIVATED='71'3 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:46:16 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:46:16 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:46:16 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:46:16 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:46:17 symfony [info] {main} Get slot "title"
+Apr 15 21:46:17 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:46:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:46:17 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:46:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:46:17 symfony [info] {sfWebDebugLogger} Configuration 319.96 ms (11)
+Apr 15 21:46:17 symfony [info] {sfWebDebugLogger} Factories 53.41 ms (1)
+Apr 15 21:46:17 symfony [info] {sfWebDebugLogger} Action "job/search" 338.46 ms (1)
+Apr 15 21:46:17 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 332.14 ms (1)
+Apr 15 21:46:17 symfony [info] {sfWebDebugLogger} Partial "job/_list" 12.68 ms (1)
+Apr 15 21:46:17 symfony [info] {sfWebResponse} Send content (87005 o)
+Apr 15 21:47:06 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:47:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:47:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:47:06 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:47:07 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:47:07 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:47:07' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:47:07 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:47:07 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:47:07 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:47:07 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:47:07 symfony [info] {main} Get slot "title"
+Apr 15 21:47:07 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:47:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:47:07 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:47:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:47:07 symfony [info] {sfWebDebugLogger} Configuration 317.97 ms (11)
+Apr 15 21:47:07 symfony [info] {sfWebDebugLogger} Factories 51.95 ms (1)
+Apr 15 21:47:07 symfony [info] {sfWebDebugLogger} Action "job/search" 164.50 ms (1)
+Apr 15 21:47:07 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 319.13 ms (1)
+Apr 15 21:47:07 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.57 ms (1)
+Apr 15 21:47:07 symfony [info] {sfWebResponse} Send content (79871 o)
+Apr 15 21:47:09 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:47:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:47:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:47:09 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:47:09 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:47:09 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:47:09' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:47:09 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:47:09 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:47:09 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:47:09 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:47:10 symfony [info] {main} Get slot "title"
+Apr 15 21:47:10 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:47:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:47:10 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:47:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:47:10 symfony [info] {sfWebDebugLogger} Configuration 331.75 ms (11)
+Apr 15 21:47:10 symfony [info] {sfWebDebugLogger} Factories 51.53 ms (1)
+Apr 15 21:47:10 symfony [info] {sfWebDebugLogger} Action "job/search" 162.37 ms (1)
+Apr 15 21:47:10 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 331.65 ms (1)
+Apr 15 21:47:10 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.56 ms (1)
+Apr 15 21:47:10 symfony [info] {sfWebResponse} Send content (79857 o)
+Apr 15 21:47:11 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:47:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:47:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:47:11 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:47:11 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:47:11 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:47:11' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:47:11 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:47:11 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:47:11 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:47:11 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:47:11 symfony [info] {main} Get slot "title"
+Apr 15 21:47:11 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:47:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:47:11 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:47:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:47:11 symfony [info] {sfWebDebugLogger} Configuration 312.43 ms (11)
+Apr 15 21:47:11 symfony [info] {sfWebDebugLogger} Factories 53.52 ms (1)
+Apr 15 21:47:11 symfony [info] {sfWebDebugLogger} Action "job/search" 163.45 ms (1)
+Apr 15 21:47:11 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 313.43 ms (1)
+Apr 15 21:47:11 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.57 ms (1)
+Apr 15 21:47:11 symfony [info] {sfWebResponse} Send content (79857 o)
+Apr 15 21:47:13 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:47:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:47:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:47:13 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:47:13 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:47:13 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:47:13' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:47:13 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:47:13 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:47:13 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:47:13 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:47:13 symfony [info] {main} Get slot "title"
+Apr 15 21:47:13 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:47:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:47:13 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:47:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:47:13 symfony [info] {sfWebDebugLogger} Configuration 310.97 ms (11)
+Apr 15 21:47:13 symfony [info] {sfWebDebugLogger} Factories 51.70 ms (1)
+Apr 15 21:47:13 symfony [info] {sfWebDebugLogger} Action "job/search" 164.91 ms (1)
+Apr 15 21:47:13 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 311.79 ms (1)
+Apr 15 21:47:13 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.61 ms (1)
+Apr 15 21:47:13 symfony [info] {sfWebResponse} Send content (79857 o)
+Apr 15 21:47:28 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:47:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:47:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:47:28 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:47:28 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:47:28 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:47:28' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:47:28 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:47:28 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:47:28 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:47:28 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:47:28 symfony [info] {main} Get slot "title"
+Apr 15 21:47:28 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:47:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:47:28 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:113))
+Apr 15 21:47:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:47:28 symfony [info] {sfWebDebugLogger} Configuration 310.93 ms (11)
+Apr 15 21:47:28 symfony [info] {sfWebDebugLogger} Factories 50.94 ms (1)
+Apr 15 21:47:28 symfony [info] {sfWebDebugLogger} Action "job/search" 158.45 ms (1)
+Apr 15 21:47:28 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 314.93 ms (1)
+Apr 15 21:47:28 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.65 ms (1)
+Apr 15 21:47:28 symfony [info] {sfWebResponse} Send content (79762 o)
+Apr 15 21:48:09 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:48:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:48:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:48:09 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:48:10 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:48:10 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:48:10' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:48:10 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:48:10 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:48:10 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:48:10 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:48:10 symfony [info] {main} Get slot "title"
+Apr 15 21:48:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:48:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:48:10 symfony [info] {sfWebDebugLogger} Configuration 309.15 ms (11)
+Apr 15 21:48:10 symfony [info] {sfWebDebugLogger} Factories 51.17 ms (1)
+Apr 15 21:48:10 symfony [info] {sfWebDebugLogger} Action "job/search" 165.16 ms (1)
+Apr 15 21:48:10 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 310.28 ms (1)
+Apr 15 21:48:10 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.55 ms (1)
+Apr 15 21:48:10 symfony [info] {sfWebResponse} Send content (79762 o)
+Apr 15 21:48:15 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:48:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:48:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:48:15 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:48:15 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:48:15 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:48:15' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:48:15 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:48:15 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:48:15 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:48:15 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:48:16 symfony [info] {main} Get slot "title"
+Apr 15 21:48:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:48:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:48:16 symfony [info] {sfWebDebugLogger} Configuration 318.92 ms (11)
+Apr 15 21:48:16 symfony [info] {sfWebDebugLogger} Factories 53.82 ms (1)
+Apr 15 21:48:16 symfony [info] {sfWebDebugLogger} Action "job/search" 159.91 ms (1)
+Apr 15 21:48:16 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 320.06 ms (1)
+Apr 15 21:48:16 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.67 ms (1)
+Apr 15 21:48:16 symfony [info] {sfWebResponse} Send content (79857 o)
+Apr 15 21:48:31 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+Apr 15 21:48:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:48:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:48:31 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 15 21:48:31 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.5 MB | mempeak:    5.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:48:31 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2013-04-15 21:48:31' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Apr 15 21:48:31 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 15 21:48:31 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.5 MB | mempeak:    6.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=10 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:48:31' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Apr 15 21:48:31 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:48:31 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=10 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:48:31' AND jobeet_job.IS_ACTIVATED=1
+Apr 15 21:48:31 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:48:31 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:48:32 symfony [info] {main} Get slot "title"
+Apr 15 21:48:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:48:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:48:32 symfony [info] {sfWebDebugLogger} Configuration 360.21 ms (11)
+Apr 15 21:48:32 symfony [info] {sfWebDebugLogger} Factories 56.36 ms (1)
+Apr 15 21:48:32 symfony [info] {sfWebDebugLogger} Action "job/index" 30.30 ms (1)
+Apr 15 21:48:32 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 368.86 ms (1)
+Apr 15 21:48:32 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.06 ms (1)
+Apr 15 21:48:32 symfony [info] {sfWebResponse} Send content (104869 o)
+Apr 15 21:48:34 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:48:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:48:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:48:34 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:48:34 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:48:34 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:48:34' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:48:34 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:48:34 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:48:34 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:48:34 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:48:35 symfony [info] {main} Get slot "title"
+Apr 15 21:48:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:48:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:48:35 symfony [info] {sfWebDebugLogger} Configuration 311.47 ms (11)
+Apr 15 21:48:35 symfony [info] {sfWebDebugLogger} Factories 49.61 ms (1)
+Apr 15 21:48:35 symfony [info] {sfWebDebugLogger} Action "job/search" 162.06 ms (1)
+Apr 15 21:48:35 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 314.26 ms (1)
+Apr 15 21:48:35 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.57 ms (1)
+Apr 15 21:48:35 symfony [info] {sfWebResponse} Send content (79843 o)
+Apr 15 21:48:50 symfony [info] {sfPatternRouting} Match route "job_search" (/search) for /search with parameters array (  'module' => 'job',  'action' => 'search',)
+Apr 15 21:48:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 15 21:48:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 15 21:48:50 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Apr 15 21:48:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 15 21:48:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2013-04-15 21:48:51' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Apr 15 21:48:51 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/searchSuccess.php"
+Apr 15 21:48:51 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 15 21:48:51 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:48:51 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 15 21:48:51 symfony [info] {main} Get slot "title"
+Apr 15 21:48:51 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:115))
+Apr 15 21:48:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 15 21:48:51 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\lib\model\JobeetJobPeer.php:115))
+Apr 15 21:48:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 15 21:48:51 symfony [info] {sfWebDebugLogger} Configuration 305.45 ms (11)
+Apr 15 21:48:51 symfony [info] {sfWebDebugLogger} Factories 51.70 ms (1)
+Apr 15 21:48:51 symfony [info] {sfWebDebugLogger} Action "job/search" 158.37 ms (1)
+Apr 15 21:48:51 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 305.14 ms (1)
+Apr 15 21:48:51 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.58 ms (1)
+Apr 15 21:48:51 symfony [info] {sfWebResponse} Send content (79857 o)

@@ -112,4 +112,19 @@ class jobActions extends sfActions
 
        $this->redirect('job_show_user', $job);
    }
+
+   public function executeSearch(sfWebRequest $request)
+   {
+       if(!$query = $request->getParameter('query'))
+       {
+           $this->forward('job','index');
+       }
+       //$this->forward404Unless($query = $request->getParameter('query'),'job','index');
+
+       $this->jobs = JobeetJobPeer::getForLuceneQuery($query);
+
+       if($request->isXmlHttpRequest()){
+           return $this->renderPatial('job/list', array('jobs' => $this->jobs));
+       }
+   }
 }
