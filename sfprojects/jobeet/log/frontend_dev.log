@@ -3145,3 +3145,399 @@ Apr 15 21:48:51 symfony [info] {sfWebDebugLogger} Action "job/search" 158.37 ms 
 Apr 15 21:48:51 symfony [info] {sfWebDebugLogger} View "Success" for "job/search" 305.14 ms (1)
 Apr 15 21:48:51 symfony [info] {sfWebDebugLogger} Partial "job/_list" 0.58 ms (1)
 Apr 15 21:48:51 symfony [info] {sfWebResponse} Send content (79857 o)
+Apr 25 11:46:52 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+Apr 25 11:46:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 25 11:46:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 25 11:46:52 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 25 11:46:52 symfony [info] {sfFrontWebController} Redirect to "http://www.jobeet.com.localhost/frontend_dev.php/en/"
+Apr 25 11:46:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 25 11:46:52 symfony [info] {sfWebResponse} Send header "Location: http://www.jobeet.com.localhost/frontend_dev.php/en/"
+Apr 25 11:46:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 25 11:46:52 symfony [info] {sfWebDebugLogger} Configuration 411.54 ms (8)
+Apr 25 11:46:52 symfony [info] {sfWebDebugLogger} Factories 112.62 ms (1)
+Apr 25 11:46:52 symfony [info] {sfWebDebugLogger} Action "job/index" 1.46 ms (1)
+Apr 25 11:46:52 symfony [info] {sfWebResponse} Send content (123 o)
+Apr 25 11:46:52 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'job',  'action' => 'index',  'sf_culture' => 'en',)
+Apr 25 11:46:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 25 11:46:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 25 11:46:52 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 25 11:46:52 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.5 MB | mempeak:    5.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 25 11:46:52 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2013-04-25 11:46:52' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Apr 25 11:46:52 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 25 11:46:52 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.3 MB | mempeak:    7.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 11:46:52' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Apr 25 11:46:52 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 25 11:46:52 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 11:46:52' AND jobeet_job.IS_ACTIVATED=1
+Apr 25 11:46:52 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 11:46:52 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 11:46:52 symfony [info] {main} Get slot "title"
+Apr 25 11:46:52 symfony [info] {main} Call "language->executeLanguage()"
+Apr 25 11:46:52 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/language/templates/_language.php"
+Apr 25 11:46:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 25 11:46:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 25 11:46:52 symfony [info] {sfWebDebugLogger} Configuration 367.45 ms (12)
+Apr 25 11:46:52 symfony [info] {sfWebDebugLogger} Factories 50.24 ms (1)
+Apr 25 11:46:52 symfony [info] {sfWebDebugLogger} Action "job/index" 28.11 ms (1)
+Apr 25 11:46:52 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 423.81 ms (1)
+Apr 25 11:46:52 symfony [info] {sfWebDebugLogger} Partial "job/_list" 7.30 ms (1)
+Apr 25 11:46:52 symfony [info] {sfWebDebugLogger} Component "language/language" 32.23 ms (1)
+Apr 25 11:46:52 symfony [info] {sfWebDebugLogger} Partial "language/_language" 6.06 ms (1)
+Apr 25 11:46:52 symfony [info] {sfWebResponse} Send content (114953 o)
+Apr 25 11:47:00 symfony [info] {sfPatternRouting} Match route "change_language" (/change_language) for /change_language with parameters array (  'module' => 'language',  'action' => 'changeLanguage',)
+Apr 25 11:47:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 25 11:47:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 25 11:47:01 symfony [info] {languageActions} Call "languageActions->executeChangeLanguage()"
+Apr 25 11:47:01 symfony [err] {InvalidArgumentException} The following languages do not exist: enfr.
+Apr 25 11:47:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 25 11:47:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 25 11:47:01 symfony [info] {sfWebDebugLogger} Configuration 66.42 ms (9)
+Apr 25 11:47:01 symfony [info] {sfWebDebugLogger} Factories 53.66 ms (1)
+Apr 25 11:47:01 symfony [info] {sfWebDebugLogger} Action "language/changeLanguage" 47.22 ms (1)
+Apr 25 11:47:46 symfony [info] {sfPatternRouting} Match route "change_language" (/change_language) for /change_language with parameters array (  'module' => 'language',  'action' => 'changeLanguage',)
+Apr 25 11:47:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 25 11:47:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 25 11:47:46 symfony [info] {languageActions} Call "languageActions->executeChangeLanguage()"
+Apr 25 11:47:46 symfony [info] {sfFrontWebController} Redirect to "http://www.jobeet.com.localhost/frontend_dev.php/en/"
+Apr 25 11:47:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 25 11:47:46 symfony [info] {sfWebResponse} Send header "Location: http://www.jobeet.com.localhost/frontend_dev.php/en/"
+Apr 25 11:47:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 25 11:47:46 symfony [info] {sfWebDebugLogger} Configuration 32.86 ms (8)
+Apr 25 11:47:46 symfony [info] {sfWebDebugLogger} Factories 51.52 ms (1)
+Apr 25 11:47:46 symfony [info] {sfWebDebugLogger} Action "language/changeLanguage" 15.28 ms (1)
+Apr 25 11:47:46 symfony [info] {sfWebResponse} Send content (123 o)
+Apr 25 11:47:46 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'job',  'action' => 'index',  'sf_culture' => 'en',)
+Apr 25 11:47:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 25 11:47:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 25 11:47:46 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 25 11:47:46 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.5 MB | mempeak:    5.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 25 11:47:46 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2013-04-25 11:47:46' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Apr 25 11:47:46 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 25 11:47:46 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.5 MB | mempeak:    6.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 11:47:46' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Apr 25 11:47:46 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 25 11:47:46 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.3 MB | mempeak:    7.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 11:47:46' AND jobeet_job.IS_ACTIVATED=1
+Apr 25 11:47:46 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 11:47:46 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 11:47:46 symfony [info] {main} Get slot "title"
+Apr 25 11:47:46 symfony [info] {main} Call "language->executeLanguage()"
+Apr 25 11:47:46 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/language/templates/_language.php"
+Apr 25 11:47:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 25 11:47:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 25 11:47:46 symfony [info] {sfWebDebugLogger} Configuration 353.26 ms (12)
+Apr 25 11:47:46 symfony [info] {sfWebDebugLogger} Factories 49.76 ms (1)
+Apr 25 11:47:46 symfony [info] {sfWebDebugLogger} Action "job/index" 27.40 ms (1)
+Apr 25 11:47:46 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 391.93 ms (1)
+Apr 25 11:47:46 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.77 ms (1)
+Apr 25 11:47:46 symfony [info] {sfWebDebugLogger} Component "language/language" 17.24 ms (1)
+Apr 25 11:47:46 symfony [info] {sfWebDebugLogger} Partial "language/_language" 5.07 ms (1)
+Apr 25 11:47:46 symfony [info] {sfWebResponse} Send content (115034 o)
+Apr 25 11:47:50 symfony [info] {sfPatternRouting} Match route "change_language" (/change_language) for /change_language with parameters array (  'module' => 'language',  'action' => 'changeLanguage',)
+Apr 25 11:47:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 25 11:47:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 25 11:47:50 symfony [info] {languageActions} Call "languageActions->executeChangeLanguage()"
+Apr 25 11:47:50 symfony [info] {sfFrontWebController} Redirect to "http://www.jobeet.com.localhost/frontend_dev.php/fr/"
+Apr 25 11:47:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 25 11:47:50 symfony [info] {sfWebResponse} Send header "Location: http://www.jobeet.com.localhost/frontend_dev.php/fr/"
+Apr 25 11:47:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 25 11:47:50 symfony [info] {sfWebDebugLogger} Configuration 31.06 ms (8)
+Apr 25 11:47:50 symfony [info] {sfWebDebugLogger} Factories 49.61 ms (1)
+Apr 25 11:47:50 symfony [info] {sfWebDebugLogger} Action "language/changeLanguage" 13.34 ms (1)
+Apr 25 11:47:50 symfony [info] {sfWebResponse} Send content (123 o)
+Apr 25 11:47:50 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /fr/ with parameters array (  'module' => 'job',  'action' => 'index',  'sf_culture' => 'fr',)
+Apr 25 11:47:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 25 11:47:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 25 11:47:50 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 25 11:47:50 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.5 MB | mempeak:    5.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 25 11:47:50 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2013-04-25 11:47:50' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Apr 25 11:47:50 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 25 11:47:50 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.5 MB | mempeak:    6.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 11:47:50' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Apr 25 11:47:50 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 25 11:47:50 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.3 MB | mempeak:    7.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 11:47:50' AND jobeet_job.IS_ACTIVATED=1
+Apr 25 11:47:50 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 11:47:50 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 11:47:51 symfony [info] {main} Get slot "title"
+Apr 25 11:47:51 symfony [info] {main} Call "language->executeLanguage()"
+Apr 25 11:47:51 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/language/templates/_language.php"
+Apr 25 11:47:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 25 11:47:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 25 11:47:51 symfony [info] {sfWebDebugLogger} Configuration 348.90 ms (12)
+Apr 25 11:47:51 symfony [info] {sfWebDebugLogger} Factories 48.08 ms (1)
+Apr 25 11:47:51 symfony [info] {sfWebDebugLogger} Action "job/index" 29.07 ms (1)
+Apr 25 11:47:51 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 392.08 ms (1)
+Apr 25 11:47:51 symfony [info] {sfWebDebugLogger} Partial "job/_list" 5.98 ms (1)
+Apr 25 11:47:51 symfony [info] {sfWebDebugLogger} Component "language/language" 22.92 ms (1)
+Apr 25 11:47:51 symfony [info] {sfWebDebugLogger} Partial "language/_language" 4.97 ms (1)
+Apr 25 11:47:51 symfony [info] {sfWebResponse} Send content (115037 o)
+Apr 25 12:16:30 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /fr/ with parameters array (  'module' => 'job',  'action' => 'index',  'sf_culture' => 'fr',)
+Apr 25 12:16:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 25 12:16:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 25 12:16:30 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 25 12:16:30 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 25 12:16:30 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2013-04-25 12:16:30' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Apr 25 12:16:30 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 25 12:16:30 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 12:16:30' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Apr 25 12:16:30 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 25 12:16:30 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 12:16:30' AND jobeet_job.IS_ACTIVATED=1
+Apr 25 12:16:30 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 12:16:30 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 12:16:30 symfony [info] {main} Get slot "title"
+Apr 25 12:16:30 symfony [info] {main} Call "language->executeLanguage()"
+Apr 25 12:16:30 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/language/templates/_language.php"
+Apr 25 12:16:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 25 12:16:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 25 12:16:30 symfony [info] {sfWebDebugLogger} Configuration 332.12 ms (11)
+Apr 25 12:16:30 symfony [info] {sfWebDebugLogger} Factories 62.99 ms (1)
+Apr 25 12:16:30 symfony [info] {sfWebDebugLogger} Action "job/index" 29.54 ms (1)
+Apr 25 12:16:30 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 387.34 ms (1)
+Apr 25 12:16:30 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.66 ms (1)
+Apr 25 12:16:30 symfony [info] {sfWebDebugLogger} Component "language/language" 20.61 ms (1)
+Apr 25 12:16:30 symfony [info] {sfWebDebugLogger} Partial "language/_language" 4.24 ms (1)
+Apr 25 12:16:30 symfony [info] {sfWebResponse} Send content (115045 o)
+Apr 25 12:16:42 symfony [info] {sfPatternRouting} Match route "change_language" (/change_language) for /change_language with parameters array (  'module' => 'language',  'action' => 'changeLanguage',)
+Apr 25 12:16:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 25 12:16:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 25 12:16:42 symfony [info] {languageActions} Call "languageActions->executeChangeLanguage()"
+Apr 25 12:16:42 symfony [info] {sfFrontWebController} Redirect to "http://www.jobeet.com.localhost/frontend_dev.php/en/"
+Apr 25 12:16:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 25 12:16:42 symfony [info] {sfWebResponse} Send header "Location: http://www.jobeet.com.localhost/frontend_dev.php/en/"
+Apr 25 12:16:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 25 12:16:42 symfony [info] {sfWebDebugLogger} Configuration 32.94 ms (8)
+Apr 25 12:16:42 symfony [info] {sfWebDebugLogger} Factories 65.93 ms (1)
+Apr 25 12:16:42 symfony [info] {sfWebDebugLogger} Action "language/changeLanguage" 28.42 ms (1)
+Apr 25 12:16:42 symfony [info] {sfWebResponse} Send content (123 o)
+Apr 25 12:16:42 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'job',  'action' => 'index',  'sf_culture' => 'en',)
+Apr 25 12:16:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 25 12:16:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 25 12:16:42 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 25 12:16:42 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.0 MB | mempeak:    6.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 25 12:16:42 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.3 MB | mempeak:    6.3 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2013-04-25 12:16:42' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Apr 25 12:16:42 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 25 12:16:42 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 12:16:42' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Apr 25 12:16:42 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 25 12:16:42 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 12:16:42' AND jobeet_job.IS_ACTIVATED=1
+Apr 25 12:16:42 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 12:16:42 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 12:16:42 symfony [info] {main} Get slot "title"
+Apr 25 12:16:42 symfony [info] {main} Call "language->executeLanguage()"
+Apr 25 12:16:42 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/language/templates/_language.php"
+Apr 25 12:16:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 25 12:16:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 25 12:16:42 symfony [info] {sfWebDebugLogger} Configuration 344.98 ms (12)
+Apr 25 12:16:42 symfony [info] {sfWebDebugLogger} Factories 61.74 ms (1)
+Apr 25 12:16:42 symfony [info] {sfWebDebugLogger} Action "job/index" 28.21 ms (1)
+Apr 25 12:16:42 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 385.38 ms (1)
+Apr 25 12:16:42 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.98 ms (1)
+Apr 25 12:16:42 symfony [info] {sfWebDebugLogger} Component "language/language" 17.36 ms (1)
+Apr 25 12:16:42 symfony [info] {sfWebDebugLogger} Partial "language/_language" 4.39 ms (1)
+Apr 25 12:16:43 symfony [info] {sfWebResponse} Send content (115091 o)
+Apr 25 12:16:51 symfony [info] {sfPatternRouting} Match route "change_language" (/change_language) for /change_language with parameters array (  'module' => 'language',  'action' => 'changeLanguage',)
+Apr 25 12:16:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 25 12:16:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 25 12:16:51 symfony [info] {languageActions} Call "languageActions->executeChangeLanguage()"
+Apr 25 12:16:51 symfony [info] {sfFrontWebController} Redirect to "http://www.jobeet.com.localhost/frontend_dev.php/fr/"
+Apr 25 12:16:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 25 12:16:51 symfony [info] {sfWebResponse} Send header "Location: http://www.jobeet.com.localhost/frontend_dev.php/fr/"
+Apr 25 12:16:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 25 12:16:51 symfony [info] {sfWebDebugLogger} Configuration 35.24 ms (8)
+Apr 25 12:16:51 symfony [info] {sfWebDebugLogger} Factories 64.98 ms (1)
+Apr 25 12:16:51 symfony [info] {sfWebDebugLogger} Action "language/changeLanguage" 19.44 ms (1)
+Apr 25 12:16:51 symfony [info] {sfWebResponse} Send content (123 o)
+Apr 25 12:16:51 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /fr/ with parameters array (  'module' => 'job',  'action' => 'index',  'sf_culture' => 'fr',)
+Apr 25 12:16:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 25 12:16:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 25 12:16:51 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 25 12:16:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.0 MB | mempeak:    6.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 25 12:16:51 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.3 MB | mempeak:    6.3 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2013-04-25 12:16:51' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Apr 25 12:16:51 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 25 12:16:51 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 12:16:51' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Apr 25 12:16:51 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 25 12:16:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 12:16:51' AND jobeet_job.IS_ACTIVATED=1
+Apr 25 12:16:51 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 12:16:51 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 12:16:51 symfony [info] {main} Get slot "title"
+Apr 25 12:16:51 symfony [info] {main} Call "language->executeLanguage()"
+Apr 25 12:16:51 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/language/templates/_language.php"
+Apr 25 12:16:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 25 12:16:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 25 12:16:51 symfony [info] {sfWebDebugLogger} Configuration 345.28 ms (12)
+Apr 25 12:16:51 symfony [info] {sfWebDebugLogger} Factories 62.31 ms (1)
+Apr 25 12:16:51 symfony [info] {sfWebDebugLogger} Action "job/index" 28.39 ms (1)
+Apr 25 12:16:51 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 389.60 ms (1)
+Apr 25 12:16:51 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.14 ms (1)
+Apr 25 12:16:51 symfony [info] {sfWebDebugLogger} Component "language/language" 19.21 ms (1)
+Apr 25 12:16:51 symfony [info] {sfWebDebugLogger} Partial "language/_language" 4.22 ms (1)
+Apr 25 12:16:51 symfony [info] {sfWebResponse} Send content (115094 o)
+Apr 25 12:17:10 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /fr/ with parameters array (  'module' => 'job',  'action' => 'index',  'sf_culture' => 'fr',)
+Apr 25 12:17:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 25 12:17:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 25 12:17:10 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 25 12:17:10 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.3 MB | mempeak:    7.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 25 12:17:10 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2013-04-25 12:17:10' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Apr 25 12:17:10 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 25 12:17:10 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 12:17:10' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Apr 25 12:17:10 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 25 12:17:10 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.0 MB | mempeak:    9.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 12:17:10' AND jobeet_job.IS_ACTIVATED=1
+Apr 25 12:17:10 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 12:17:10 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 12:17:10 symfony [info] {main} Get slot "title"
+Apr 25 12:17:10 symfony [info] {main} Call "language->executeLanguage()"
+Apr 25 12:17:10 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/language/templates/_language.php"
+Apr 25 12:17:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 25 12:17:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 25 12:17:10 symfony [info] {sfWebDebugLogger} Configuration 716.75 ms (11)
+Apr 25 12:17:10 symfony [info] {sfWebDebugLogger} Factories 113.21 ms (1)
+Apr 25 12:17:10 symfony [info] {sfWebDebugLogger} Action "job/index" 28.28 ms (1)
+Apr 25 12:17:10 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 391.79 ms (1)
+Apr 25 12:17:10 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.07 ms (1)
+Apr 25 12:17:10 symfony [info] {sfWebDebugLogger} Component "language/language" 21.12 ms (1)
+Apr 25 12:17:10 symfony [info] {sfWebDebugLogger} Partial "language/_language" 4.62 ms (1)
+Apr 25 12:17:10 symfony [info] {sfWebResponse} Send content (115046 o)
+Apr 25 12:18:21 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /fr/ with parameters array (  'module' => 'job',  'action' => 'index',  'sf_culture' => 'fr',)
+Apr 25 12:18:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 25 12:18:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 25 12:18:21 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 25 12:18:21 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.0 MB | mempeak:    6.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 25 12:18:21 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.3 MB | mempeak:    6.3 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2013-04-25 12:18:21' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Apr 25 12:18:21 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 25 12:18:21 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 12:18:21' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Apr 25 12:18:21 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 25 12:18:21 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 12:18:21' AND jobeet_job.IS_ACTIVATED=1
+Apr 25 12:18:21 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 12:18:21 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 12:18:21 symfony [info] {main} Get slot "title"
+Apr 25 12:18:21 symfony [info] {main} Call "language->executeLanguage()"
+Apr 25 12:18:21 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/language/templates/_language.php"
+Apr 25 12:18:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 25 12:18:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 25 12:18:21 symfony [info] {sfWebDebugLogger} Configuration 346.35 ms (12)
+Apr 25 12:18:21 symfony [info] {sfWebDebugLogger} Factories 63.52 ms (1)
+Apr 25 12:18:21 symfony [info] {sfWebDebugLogger} Action "job/index" 28.82 ms (1)
+Apr 25 12:18:21 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 392.35 ms (1)
+Apr 25 12:18:21 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.45 ms (1)
+Apr 25 12:18:21 symfony [info] {sfWebDebugLogger} Component "language/language" 19.65 ms (1)
+Apr 25 12:18:21 symfony [info] {sfWebDebugLogger} Partial "language/_language" 4.18 ms (1)
+Apr 25 12:18:21 symfony [info] {sfWebResponse} Send content (115045 o)
+Apr 25 12:38:03 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /fr/ with parameters array (  'module' => 'job',  'action' => 'index',  'sf_culture' => 'fr',)
+Apr 25 12:38:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 25 12:38:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 25 12:38:03 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 25 12:38:03 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.3 MB | mempeak:    7.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 25 12:38:03 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2013-04-25 12:38:03' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Apr 25 12:38:03 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 25 12:38:03 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    8.3 MB | mempeak:    8.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 12:38:03' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Apr 25 12:38:03 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 25 12:38:03 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.0 MB | mempeak:    9.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 12:38:03' AND jobeet_job.IS_ACTIVATED=1
+Apr 25 12:38:03 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 12:38:03 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 12:38:04 symfony [info] {main} Get slot "title"
+Apr 25 12:38:04 symfony [info] {main} Call "language->executeLanguage()"
+Apr 25 12:38:04 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/language/templates/_language.php"
+Apr 25 12:38:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 25 12:38:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 25 12:38:04 symfony [info] {sfWebDebugLogger} Configuration 728.29 ms (11)
+Apr 25 12:38:04 symfony [info] {sfWebDebugLogger} Factories 117.53 ms (1)
+Apr 25 12:38:04 symfony [info] {sfWebDebugLogger} Action "job/index" 28.71 ms (1)
+Apr 25 12:38:04 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 395.08 ms (1)
+Apr 25 12:38:04 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.16 ms (1)
+Apr 25 12:38:04 symfony [info] {sfWebDebugLogger} Component "language/language" 20.17 ms (1)
+Apr 25 12:38:04 symfony [info] {sfWebDebugLogger} Partial "language/_language" 4.67 ms (1)
+Apr 25 12:38:04 symfony [info] {sfWebResponse} Send content (115061 o)
+Apr 25 12:38:16 symfony [info] {sfPatternRouting} Match route "change_language" (/change_language) for /change_language with parameters array (  'module' => 'language',  'action' => 'changeLanguage',)
+Apr 25 12:38:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 25 12:38:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 25 12:38:16 symfony [info] {languageActions} Call "languageActions->executeChangeLanguage()"
+Apr 25 12:38:16 symfony [info] {sfFrontWebController} Redirect to "http://www.jobeet.com.localhost/frontend_dev.php/en/"
+Apr 25 12:38:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 25 12:38:16 symfony [info] {sfWebResponse} Send header "Location: http://www.jobeet.com.localhost/frontend_dev.php/en/"
+Apr 25 12:38:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 25 12:38:16 symfony [info] {sfWebDebugLogger} Configuration 69.06 ms (9)
+Apr 25 12:38:16 symfony [info] {sfWebDebugLogger} Factories 68.58 ms (1)
+Apr 25 12:38:16 symfony [info] {sfWebDebugLogger} Action "language/changeLanguage" 26.88 ms (1)
+Apr 25 12:38:16 symfony [info] {sfWebResponse} Send content (123 o)
+Apr 25 12:38:16 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'job',  'action' => 'index',  'sf_culture' => 'en',)
+Apr 25 12:38:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 25 12:38:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 25 12:38:16 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 25 12:38:16 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.0 MB | mempeak:    6.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 25 12:38:16 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.3 MB | mempeak:    6.3 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2013-04-25 12:38:16' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Apr 25 12:38:16 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 25 12:38:16 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 12:38:16' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Apr 25 12:38:16 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 25 12:38:16 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 12:38:16' AND jobeet_job.IS_ACTIVATED=1
+Apr 25 12:38:16 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 12:38:16 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 12:38:16 symfony [info] {main} Get slot "title"
+Apr 25 12:38:16 symfony [info] {main} Call "language->executeLanguage()"
+Apr 25 12:38:16 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/language/templates/_language.php"
+Apr 25 12:38:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 25 12:38:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 25 12:38:16 symfony [info] {sfWebDebugLogger} Configuration 356.88 ms (12)
+Apr 25 12:38:16 symfony [info] {sfWebDebugLogger} Factories 63.03 ms (1)
+Apr 25 12:38:16 symfony [info] {sfWebDebugLogger} Action "job/index" 28.82 ms (1)
+Apr 25 12:38:16 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 403.74 ms (1)
+Apr 25 12:38:16 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.73 ms (1)
+Apr 25 12:38:16 symfony [info] {sfWebDebugLogger} Component "language/language" 17.57 ms (1)
+Apr 25 12:38:16 symfony [info] {sfWebDebugLogger} Partial "language/_language" 4.31 ms (1)
+Apr 25 12:38:16 symfony [info] {sfWebResponse} Send content (115101 o)
+Apr 25 19:23:37 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'job',  'action' => 'index',  'sf_culture' => 'en',)
+Apr 25 19:23:37 symfony [info] {myUser} Automatic user logout due to timeout
+Apr 25 19:23:37 symfony [info] {myUser} User is not authenticated
+Apr 25 19:23:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 25 19:23:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 25 19:23:37 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 25 19:23:37 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.0 MB | mempeak:    6.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 25 19:23:37 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.3 MB | mempeak:    6.3 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2013-04-25 19:23:37' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Apr 25 19:23:37 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 25 19:23:37 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 19:23:37' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Apr 25 19:23:37 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 25 19:23:37 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 19:23:37' AND jobeet_job.IS_ACTIVATED=1
+Apr 25 19:23:37 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 19:23:37 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 19:23:37 symfony [info] {main} Get slot "title"
+Apr 25 19:23:37 symfony [info] {main} Call "language->executeLanguage()"
+Apr 25 19:23:37 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/language/templates/_language.php"
+Apr 25 19:23:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 25 19:23:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 25 19:23:37 symfony [info] {sfWebDebugLogger} Configuration 356.21 ms (12)
+Apr 25 19:23:37 symfony [info] {sfWebDebugLogger} Factories 68.45 ms (1)
+Apr 25 19:23:37 symfony [info] {sfWebDebugLogger} Action "job/index" 30.53 ms (1)
+Apr 25 19:23:37 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 404.46 ms (1)
+Apr 25 19:23:37 symfony [info] {sfWebDebugLogger} Partial "job/_list" 7.07 ms (1)
+Apr 25 19:23:37 symfony [info] {sfWebDebugLogger} Component "language/language" 20.07 ms (1)
+Apr 25 19:23:37 symfony [info] {sfWebDebugLogger} Partial "language/_language" 5.55 ms (1)
+Apr 25 19:23:37 symfony [info] {sfWebResponse} Send content (118667 o)
+Apr 25 19:23:41 symfony [info] {sfPatternRouting} Match route "change_language" (/change_language) for /change_language with parameters array (  'module' => 'language',  'action' => 'changeLanguage',)
+Apr 25 19:23:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 25 19:23:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 25 19:23:41 symfony [info] {languageActions} Call "languageActions->executeChangeLanguage()"
+Apr 25 19:23:41 symfony [info] {sfFrontWebController} Redirect to "http://www.jobeet.com.localhost/frontend_dev.php/fr/"
+Apr 25 19:23:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 25 19:23:41 symfony [info] {sfWebResponse} Send header "Location: http://www.jobeet.com.localhost/frontend_dev.php/fr/"
+Apr 25 19:23:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 25 19:23:41 symfony [info] {sfWebDebugLogger} Configuration 32.86 ms (8)
+Apr 25 19:23:41 symfony [info] {sfWebDebugLogger} Factories 68.45 ms (1)
+Apr 25 19:23:41 symfony [info] {sfWebDebugLogger} Action "language/changeLanguage" 23.10 ms (1)
+Apr 25 19:23:41 symfony [info] {sfWebResponse} Send content (123 o)
+Apr 25 19:23:41 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /fr/ with parameters array (  'module' => 'job',  'action' => 'index',  'sf_culture' => 'fr',)
+Apr 25 19:23:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 25 19:23:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 25 19:23:41 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 25 19:23:41 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.0 MB | mempeak:    6.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 25 19:23:41 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.3 MB | mempeak:    6.3 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2013-04-25 19:23:41' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Apr 25 19:23:41 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 25 19:23:41 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 19:23:41' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Apr 25 19:23:41 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Apr 25 19:23:41 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2013-04-25 19:23:41' AND jobeet_job.IS_ACTIVATED=1
+Apr 25 19:23:41 symfony [info] {sfPHPView} Decorate content with "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 19:23:41 symfony [info] {sfPHPView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\templates/layout.php"
+Apr 25 19:23:41 symfony [info] {main} Get slot "title"
+Apr 25 19:23:41 symfony [info] {main} Call "language->executeLanguage()"
+Apr 25 19:23:42 symfony [info] {sfPartialView} Render "C:\Users\zhang-y\PhpstormProjects\Jobeet\sfprojects\jobeet\apps\frontend\modules/language/templates/_language.php"
+Apr 25 19:23:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 25 19:23:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 25 19:23:42 symfony [info] {sfWebDebugLogger} Configuration 357.01 ms (12)
+Apr 25 19:23:42 symfony [info] {sfWebDebugLogger} Factories 63.71 ms (1)
+Apr 25 19:23:42 symfony [info] {sfWebDebugLogger} Action "job/index" 32.50 ms (1)
+Apr 25 19:23:42 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 407.17 ms (1)
+Apr 25 19:23:42 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.38 ms (1)
+Apr 25 19:23:42 symfony [info] {sfWebDebugLogger} Component "language/language" 20.42 ms (1)
+Apr 25 19:23:42 symfony [info] {sfWebDebugLogger} Partial "language/_language" 4.43 ms (1)
+Apr 25 19:23:42 symfony [info] {sfWebResponse} Send content (115150 o)

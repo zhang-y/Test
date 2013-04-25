@@ -26,6 +26,9 @@ all:
   .settings:
     # Form security secret (CSRF protection)
     csrf_secret:            ccf8ac44e87e82455dfb815bb53f6771840815eb
+    default_culture:        it_IT
+    i18n:                   true
+    standard_helpers:       [Partial, Cache, I18N]
 
     # Output escaping settings
     escaping_strategy:      true

@@ -12,6 +12,20 @@ class jobActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
+    if(!$request->getParameter('sf_culture'))
+    {
+        if($this->getUser()->isFirstRequest())
+        {
+            $culture = $request->getPreferredCulture(array('en','fr'));
+            $this->getUser()->setCulture($culture);
+            $this->getUser()->isFirstRequest(false);
+        }
+        else
+        {
+            $culture = $this->getUser()->getCulture();
+        }
+        $this->redirect('localized_homepage');
+    }
 	$this->categories = JobeetCategoryPeer::getWithJobs();
     //$this->JobeetJobs = JobeetJobPeer::getActiveJobs();
   }
@@ -124,7 +138,11 @@ class jobActions extends sfActions
        $this->jobs = JobeetJobPeer::getForLuceneQuery($query);
 
        if($request->isXmlHttpRequest()){
-           return $this->renderPatial('job/list', array('jobs' => $this->jobs));
+           if('*' == $query || !$this->jobs)
+           {
+               return $this->renderText('No results');
+           }
+           return $this->renderPartial('job/list', array('jobs' => $this->jobs));
        }
    }
 }
