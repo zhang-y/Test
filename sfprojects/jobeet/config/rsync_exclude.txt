@@ -2,6 +2,7 @@
 /cache/*
 /log/*
 /web/*_dev.php
+/web/frontend_cache.php
 /web/uploads/*
 
 # SCM files
